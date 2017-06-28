@@ -1,0 +1,297 @@
+EESchema Schematic File Version 2
+LIBS:GTC_01_Main-rescue
+LIBS:CBC_Arduino
+LIBS:CBC_Components
+LIBS:CBC_Headers
+LIBS:freetronics_schematic
+LIBS:CBC_GTC
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:wiznet
+LIBS:maxim
+LIBS:CBC_IC
+LIBS:CAP_0805_AVX_X7R_16V_5%_E6
+LIBS:CAP_0805_AVX_X7R_16V_10%_E6
+LIBS:CAP_0805_AVX_X7R_50V_5%_E6
+LIBS:CAP_0805_AVX_X7R_50V_10%_E6
+LIBS:CAP_0805_Kemet_X7R_16V_5%_E12
+LIBS:CAP_0805_Kemet_X7R_16V_10%_E12
+LIBS:CAP_0805_Kemet_X7R_50V_5%_E12
+LIBS:CAP_0805_Kemet_X7R_50V_10%_E12
+LIBS:RES_0805_Panasonic_0.125W_1%_E24
+LIBS:RES_0805_Panasonic_0.125W_1%_E96
+LIBS:RES_0805_Stackpole_0.125W_1%_E24
+LIBS:RES_0805_Stackpole_0.125W_1%_E96
+LIBS:RES_0805_Stackpole_0.125W_5%_E24
+LIBS:RES_0805_Panasonic_0.500W_5%_E24_PulseProof
+LIBS:GTC_01_Main-cache
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 9 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ProMini_328_5V_16MHZ U?
+U 1 1 590B82C8
+P 2850 1750
+F 0 "U?" H 3050 2000 60  0000 L CNN
+F 1 "ProMini_328_5V_16MHZ" H 3050 1900 60  0000 L CNN
+F 2 "" H 2850 1750 60  0001 C CNN
+F 3 "" H 2850 1750 60  0001 C CNN
+	1    2850 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L ProMini_328_5V_16MHZ U?
+U 2 1 590B832D
+P 6150 1600
+F 0 "U?" H 6350 1850 60  0000 L CNN
+F 1 "ProMini_328_5V_16MHZ" H 6350 1750 60  0000 L CNN
+F 2 "" H 6150 1600 60  0001 C CNN
+F 3 "" H 6150 1600 60  0001 C CNN
+	2    6150 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ProMini_328_5V_16MHZ U?
+U 3 1 590B8368
+P 850 5350
+F 0 "U?" H 1050 5600 60  0000 L CNN
+F 1 "ProMini_328_5V_16MHZ" H 1050 5500 60  0000 L CNN
+F 2 "" H 850 5350 60  0001 C CNN
+F 3 "" H 850 5350 60  0001 C CNN
+	3    850  5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L ProMini_328_5V_16MHZ U?
+U 4 1 590B83B3
+P 2300 7150
+F 0 "U?" H 2500 7400 60  0000 L CNN
+F 1 "ProMini_328_5V_16MHZ" H 2500 7300 60  0000 L CNN
+F 2 "" H 2300 7150 60  0001 C CNN
+F 3 "" H 2300 7150 60  0001 C CNN
+	4    2300 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ProMini_328_5V_16MHZ U?
+U 5 1 590B83F2
+P 5700 5300
+F 0 "U?" H 5900 5550 60  0000 L CNN
+F 1 "ProMini_328_5V_16MHZ" H 5900 5450 60  0000 L CNN
+F 2 "" H 5700 5300 60  0001 C CNN
+F 3 "" H 5700 5300 60  0001 C CNN
+	5    5700 5300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	500  4100 10500 4100
+Wire Notes Line
+	5350 500  5350 8000
+NoConn ~ 2900 7150
+NoConn ~ 2900 7250
+NoConn ~ 7150 2100
+NoConn ~ 7150 2200
+NoConn ~ 7150 2300
+NoConn ~ 7150 2400
+Text HLabel 8250 5100 2    60   BiDi ~ 0
+FTDI[0..5]
+Entry Wire Line
+	8000 5300 8100 5200
+Entry Wire Line
+	8000 5400 8100 5300
+Entry Wire Line
+	8000 5500 8100 5400
+Entry Wire Line
+	8000 5600 8100 5500
+Entry Wire Line
+	8000 5700 8100 5600
+Entry Wire Line
+	8000 5800 8100 5700
+Wire Bus Line
+	8250 5100 8100 5100
+Wire Bus Line
+	8100 5100 8100 5700
+Wire Wire Line
+	6500 5300 8000 5300
+Wire Wire Line
+	6500 5400 8000 5400
+Wire Wire Line
+	6500 5500 8000 5500
+Wire Wire Line
+	6500 5600 8000 5600
+Wire Wire Line
+	6500 5700 8000 5700
+Wire Wire Line
+	6500 5800 8000 5800
+Text Label 8000 5800 2    60   ~ 0
+FTDI0
+Text Label 8000 5700 2    60   ~ 0
+FTDI1
+Text Label 8000 5600 2    60   ~ 0
+FTDI2
+Text Label 8000 5500 2    60   ~ 0
+FTDI3
+Text Label 8000 5400 2    60   ~ 0
+FTDI4
+Text Label 8000 5300 2    60   ~ 0
+FTDI5
+Wire Notes Line
+	500  6300 5350 6300
+NoConn ~ 7150 1900
+Text Label 2400 5450 2    60   ~ 0
+I2C0
+Text Label 2400 5350 2    60   ~ 0
+I2C1
+Wire Wire Line
+	1650 5350 2400 5350
+Wire Wire Line
+	1650 5450 2400 5450
+Entry Wire Line
+	2400 5350 2500 5250
+Entry Wire Line
+	2400 5450 2500 5350
+Text HLabel 2650 5150 2    60   BiDi ~ 0
+I2C[0..1]
+Wire Bus Line
+	2500 5150 2500 5350
+Wire Bus Line
+	2500 5150 2650 5150
+Text HLabel 7150 1600 2    60   Input ~ 0
+RAW
+$Comp
+L GND #PWR?
+U 1 1 590B8F83
+P 7450 1700
+F 0 "#PWR?" H 7450 1450 50  0001 C CNN
+F 1 "GND" H 7450 1550 50  0000 C CNN
+F 2 "" H 7450 1700 50  0001 C CNN
+F 3 "" H 7450 1700 50  0001 C CNN
+	1    7450 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 1700 7450 1700
+Text HLabel 8200 2400 2    60   BiDi ~ 0
+SPI[0..3]
+Text Label 7850 2800 2    60   ~ 0
+SPI0
+Text Label 7850 2700 2    60   ~ 0
+SPI1
+Text Label 7850 2600 2    60   ~ 0
+SPI2
+Text Label 7850 2900 2    60   ~ 0
+SPI3
+Wire Wire Line
+	7150 2800 7850 2800
+Wire Wire Line
+	7150 2700 7850 2700
+Wire Wire Line
+	7150 2600 7850 2600
+Wire Wire Line
+	7150 2900 7850 2900
+Entry Wire Line
+	7850 2600 7950 2500
+Entry Wire Line
+	7850 2700 7950 2600
+Entry Wire Line
+	7850 2800 7950 2700
+Entry Wire Line
+	7850 2900 7950 2800
+Wire Bus Line
+	7950 2400 7950 2800
+Wire Bus Line
+	7950 2400 8200 2400
+Text HLabel 1950 1550 0    60   BiDi ~ 0
+USART[0..1]
+Text Label 2200 1750 0    60   ~ 0
+USART0
+Text Label 2200 1850 0    60   ~ 0
+USART1
+Wire Wire Line
+	2200 1850 2850 1850
+Wire Wire Line
+	2200 1750 2850 1750
+Entry Wire Line
+	2100 1650 2200 1750
+Entry Wire Line
+	2100 1750 2200 1850
+Wire Bus Line
+	2100 1550 2100 1750
+Wire Bus Line
+	2100 1550 1950 1550
+Text Label 2250 2350 0    60   ~ 0
+DIO0
+Text Label 2250 2450 0    60   ~ 0
+DIO1
+Text Label 2250 2550 0    60   ~ 0
+DIO2
+Text Label 2250 2650 0    60   ~ 0
+DIO3
+Text HLabel 1900 2200 0    60   BiDi ~ 0
+DIO[0..4]
+Entry Wire Line
+	2150 2250 2250 2350
+Entry Wire Line
+	2150 2350 2250 2450
+Entry Wire Line
+	2150 2450 2250 2550
+Entry Wire Line
+	2150 2550 2250 2650
+Wire Bus Line
+	2150 2200 2150 2650
+Wire Bus Line
+	2150 2200 1900 2200
+Text Label 2250 2750 0    60   ~ 0
+DIO3
+Entry Wire Line
+	2150 2650 2250 2750
+Wire Wire Line
+	2250 2750 2850 2750
+Wire Wire Line
+	2250 2650 2850 2650
+Wire Wire Line
+	2250 2550 2850 2550
+Wire Wire Line
+	2250 2450 2850 2450
+Wire Wire Line
+	2250 2350 2850 2350
+$EndSCHEMATC

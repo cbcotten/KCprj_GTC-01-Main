@@ -1,0 +1,240 @@
+EESchema Schematic File Version 2
+LIBS:GTC_01_Main-rescue
+LIBS:CBC_Arduino
+LIBS:CBC_Components
+LIBS:CBC_Headers
+LIBS:freetronics_schematic
+LIBS:CBC_GTC
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:wiznet
+LIBS:maxim
+LIBS:CBC_IC
+LIBS:CAP_0805_AVX_X7R_16V_5%_E6
+LIBS:CAP_0805_AVX_X7R_16V_10%_E6
+LIBS:CAP_0805_AVX_X7R_50V_5%_E6
+LIBS:CAP_0805_AVX_X7R_50V_10%_E6
+LIBS:CAP_0805_Kemet_X7R_16V_5%_E12
+LIBS:CAP_0805_Kemet_X7R_16V_10%_E12
+LIBS:CAP_0805_Kemet_X7R_50V_5%_E12
+LIBS:CAP_0805_Kemet_X7R_50V_10%_E12
+LIBS:RES_0805_Panasonic_0.125W_1%_E24
+LIBS:RES_0805_Panasonic_0.125W_1%_E96
+LIBS:RES_0805_Stackpole_0.125W_1%_E24
+LIBS:RES_0805_Stackpole_0.125W_1%_E96
+LIBS:RES_0805_Stackpole_0.125W_5%_E24
+LIBS:RES_0805_Panasonic_0.500W_5%_E24_PulseProof
+LIBS:GTC_01_Main-cache
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 4 9
+Title "GTC POWER"
+Date ""
+Rev "Draft_0"
+Comp "3RD WAVE LABS LLC"
+Comment1 "DC REGULATORS"
+Comment2 "MODULE-01"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TRACO_TSR-2-2465 U2
+U 1 1 5904DA6A
+P 4200 1950
+F 0 "U2" H 4400 2200 60  0000 L CNN
+F 1 "TRACO_TSR-2-2465" H 4400 2100 60  0000 L CNN
+F 2 "" H 4200 1950 60  0001 C CNN
+F 3 "" H 4200 1950 60  0001 C CNN
+	1    4200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5904DC3D
+P 5000 2550
+F 0 "#PWR02" H 5000 2300 50  0001 C CNN
+F 1 "GND" H 5000 2400 50  0000 C CNN
+F 2 "" H 5000 2550 50  0001 C CNN
+F 3 "" H 5000 2550 50  0001 C CNN
+	1    5000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L TRACO_TSR-1-2450 U3
+U 1 1 5904DD55
+P 4300 4100
+F 0 "U3" H 4500 4350 60  0000 L CNN
+F 1 "TRACO_TSR-1-2450" H 4500 4250 60  0000 L CNN
+F 2 "" H 4300 4100 60  0001 C CNN
+F 3 "" H 4300 4100 60  0001 C CNN
+	1    4300 4100
+	1    0    0    -1  
+$EndComp
+Text Label 2600 2150 2    60   ~ 0
+PS+
+Text Label 4200 1950 2    60   ~ 0
+PS+
+Text Label 4300 4100 2    60   ~ 0
+PS+
+$Comp
+L GND #PWR03
+U 1 1 5904E3CB
+P 2200 2650
+F 0 "#PWR03" H 2200 2400 50  0001 C CNN
+F 1 "GND" H 2200 2500 50  0000 C CNN
+F 2 "" H 2200 2650 50  0001 C CNN
+F 3 "" H 2200 2650 50  0001 C CNN
+	1    2200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5904E489
+P 5000 4700
+F 0 "#PWR04" H 5000 4450 50  0001 C CNN
+F 1 "GND" H 5000 4550 50  0000 C CNN
+F 2 "" H 5000 4700 50  0001 C CNN
+F 3 "" H 5000 4700 50  0001 C CNN
+	1    5000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5904F984
+P 4200 2400
+F 0 "C2" H 4225 2500 50  0000 L CNN
+F 1 "22uF/50V" H 4225 2300 50  0000 L CNN
+F 2 "" H 4238 2250 50  0001 C CNN
+F 3 "" H 4200 2400 50  0001 C CNN
+	1    4200 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 2250 4200 1950
+Wire Wire Line
+	4200 2550 5000 2550
+$Comp
+L C C3
+U 1 1 5904FC91
+P 4300 4550
+F 0 "C3" H 4325 4650 50  0000 L CNN
+F 1 "22uF/50V" H 4325 4450 50  0000 L CNN
+F 2 "" H 4338 4400 50  0001 C CNN
+F 3 "" H 4300 4550 50  0001 C CNN
+	1    4300 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 4700 5000 4700
+Wire Wire Line
+	4300 4400 4300 4100
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 59065442
+P 2200 2150
+F 0 "#FLG05" H 2200 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 2200 2300 50  0000 C CNN
+F 2 "" H 2200 2150 50  0001 C CNN
+F 3 "" H 2200 2150 50  0001 C CNN
+	1    2200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 59065528
+P 2200 2650
+F 0 "#FLG06" H 2200 2725 50  0001 C CNN
+F 1 "PWR_FLAG" H 2200 2800 50  0000 C CNN
+F 2 "" H 2200 2650 50  0001 C CNN
+F 3 "" H 2200 2650 50  0001 C CNN
+	1    2200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 5906557C
+P 2150 3250
+F 0 "#FLG07" H 2150 3325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2150 3400 50  0000 C CNN
+F 2 "" H 2150 3250 50  0001 C CNN
+F 3 "" H 2150 3250 50  0001 C CNN
+	1    2150 3250
+	1    0    0    -1  
+$EndComp
+Text HLabel 1550 1850 0    60   Input ~ 0
+PS[0..2]
+Entry Wire Line
+	1700 2050 1800 2150
+Entry Wire Line
+	1700 3150 1800 3250
+Entry Wire Line
+	1700 2550 1800 2650
+Wire Bus Line
+	1700 1850 1550 1850
+Text Label 1800 2150 0    60   ~ 0
+PS0
+Text Label 1800 2650 0    60   ~ 0
+PS1
+Text Label 1800 3250 0    60   ~ 0
+PS2
+Wire Wire Line
+	1800 2150 2600 2150
+Wire Wire Line
+	1800 2650 2600 2650
+Wire Wire Line
+	1800 3250 2600 3250
+Text Label 2600 2650 2    60   ~ 0
+PS-
+Text Label 2600 3250 2    60   ~ 0
+PE_GND
+Connection ~ 2200 2650
+Connection ~ 2200 2150
+Connection ~ 2150 3250
+$Comp
+L Earth_Protective #PWR08
+U 1 1 59080A1F
+P 2150 3250
+F 0 "#PWR08" H 2400 3000 50  0001 C CNN
+F 1 "Earth_Protective" H 2600 3100 50  0001 C CNN
+F 2 "" H 2150 3150 50  0001 C CNN
+F 3 "" H 2150 3150 50  0001 C CNN
+	1    2150 3250
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	1700 1850 1700 3150
+Text HLabel 5800 1950 2    60   Output ~ 0
++6.5VREG
+Text HLabel 5700 4100 2    60   Output ~ 0
++5VREG
+$EndSCHEMATC

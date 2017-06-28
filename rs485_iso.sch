@@ -1,0 +1,558 @@
+EESchema Schematic File Version 2
+LIBS:GTC_01_Main-rescue
+LIBS:CBC_Arduino
+LIBS:CBC_Components
+LIBS:CBC_Headers
+LIBS:freetronics_schematic
+LIBS:CBC_GTC
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:wiznet
+LIBS:maxim
+LIBS:CBC_IC
+LIBS:CAP_0805_AVX_X7R_16V_5%_E6
+LIBS:CAP_0805_AVX_X7R_16V_10%_E6
+LIBS:CAP_0805_AVX_X7R_50V_5%_E6
+LIBS:CAP_0805_AVX_X7R_50V_10%_E6
+LIBS:CAP_0805_Kemet_X7R_16V_5%_E12
+LIBS:CAP_0805_Kemet_X7R_16V_10%_E12
+LIBS:CAP_0805_Kemet_X7R_50V_5%_E12
+LIBS:CAP_0805_Kemet_X7R_50V_10%_E12
+LIBS:RES_0805_Panasonic_0.125W_1%_E24
+LIBS:RES_0805_Panasonic_0.125W_1%_E96
+LIBS:RES_0805_Stackpole_0.125W_1%_E24
+LIBS:RES_0805_Stackpole_0.125W_1%_E96
+LIBS:RES_0805_Stackpole_0.125W_5%_E24
+LIBS:RES_0805_Panasonic_0.500W_5%_E24_PulseProof
+LIBS:GTC_01_Main-cache
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 7 9
+Title "GTC ISOLATED RS485 TRANCIEVER"
+Date ""
+Rev "Draft_0"
+Comp "3RD WAVE LABS LLC"
+Comment1 "FULLY ISOLATED RS485 SERIAL INTERFACE"
+Comment2 "MODULE-01"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 2650 1600 0    60   ~ 0
+Vin
+Text Label 4800 1600 2    60   ~ 0
+Viso
+Text Label 2650 2300 0    60   ~ 0
+GND1
+Text Label 4800 2300 2    60   ~ 0
+GND2
+Text Label 2650 2800 0    60   ~ 0
+Vin
+Text Label 2650 3550 0    60   ~ 0
+GND1
+$Comp
+L C C6
+U 1 1 59078F2A
+P 3200 3150
+F 0 "C6" H 3225 3250 50  0000 L CNN
+F 1 "0.1uF" H 3225 3050 50  0000 L CNN
+F 2 "" H 3238 3000 50  0001 C CNN
+F 3 "" H 3200 3150 50  0001 C CNN
+	1    3200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 590790AE
+P 4750 3150
+F 0 "C7" H 4775 3250 50  0000 L CNN
+F 1 "10uF" H 4775 3050 50  0000 L CNN
+F 2 "" H 4788 3000 50  0001 C CNN
+F 3 "" H 4750 3150 50  0001 C CNN
+	1    4750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 590790D8
+P 5050 3150
+F 0 "C8" H 5075 3250 50  0000 L CNN
+F 1 "0.1uF" H 5075 3050 50  0000 L CNN
+F 2 "" H 5088 3000 50  0001 C CNN
+F 3 "" H 5050 3150 50  0001 C CNN
+	1    5050 3150
+	1    0    0    -1  
+$EndComp
+Text Label 4500 2800 0    60   ~ 0
+Viso
+Text Label 4500 3550 0    60   ~ 0
+GND2
+Text Label 4800 2200 2    60   ~ 0
+SEL
+Text Label 2650 1900 0    60   ~ 0
+DRVR_EN
+Text Label 2650 1800 0    60   ~ 0
+DRIVER
+Text Label 2650 2100 0    60   ~ 0
+RECEIVER
+Text Label 2650 2000 0    60   ~ 0
+RCVR_EN
+Text HLabel 1500 1400 0    60   Input ~ 0
+VIN
+$Comp
+L GND #PWR016
+U 1 1 5907C9BC
+P 2900 3550
+F 0 "#PWR016" H 2900 3300 50  0001 C CNN
+F 1 "GND" H 2900 3400 50  0000 C CNN
+F 2 "" H 2900 3550 50  0001 C CNN
+F 3 "" H 2900 3550 50  0001 C CNN
+	1    2900 3550
+	1    0    0    -1  
+$EndComp
+Text Label 6350 1800 2    60   ~ 0
+GND2
+Text Label 6350 2100 2    60   ~ 0
+Viso
+Text Label 6350 1900 2    60   ~ 0
+A
+Text Label 6350 2000 2    60   ~ 0
+B
+$Comp
+L C C9
+U 1 1 5907CC0D
+P 6750 1950
+F 0 "C9" H 6775 2050 50  0000 L CNN
+F 1 "0.01uF" H 6775 1850 50  0000 L CNN
+F 2 "" H 6788 1800 50  0001 C CNN
+F 3 "" H 6750 1950 50  0001 C CNN
+	1    6750 1950
+	1    0    0    -1  
+$EndComp
+Text Label 1950 4800 2    60   ~ 0
+SEL
+Text Label 3500 5100 2    60   ~ 0
+GND2
+Text Label 3450 4800 2    60   ~ 0
+Viso
+Text Notes 3200 4650 2    60   ~ 0
+Populate for Viso=5V
+Text Notes 3250 5300 2    60   ~ 0
+Populate for Viso=3.3V
+Text HLabel 1500 1600 0    60   BiDi ~ 0
+RS485-[0..3]
+Entry Wire Line
+	1650 1700 1750 1800
+Entry Wire Line
+	1650 1800 1750 1900
+Entry Wire Line
+	1650 1900 1750 2000
+Entry Wire Line
+	1650 2000 1750 2100
+Text Label 1750 2100 0    60   ~ 0
+RS485-0
+Text Label 1750 2000 0    60   ~ 0
+RS485-1
+Text Label 1750 1900 0    60   ~ 0
+RS485-2
+Text Label 1750 1800 0    60   ~ 0
+RS485-3
+Text Label 6100 4950 0    60   ~ 0
+A
+Text Label 6100 3250 0    60   ~ 0
+B
+$Comp
+L C C10
+U 1 1 5907F6E8
+P 7700 4250
+F 0 "C10" H 7725 4350 50  0000 L CNN
+F 1 "4700pF" H 7725 4150 50  0000 L CNN
+F 2 "" H 7738 4100 50  0001 C CNN
+F 3 "" H 7700 4250 50  0001 C CNN
+	1    7700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_TVS_x2_AAC D2
+U 1 1 5907F7EC
+P 7700 3600
+F 0 "D2" H 7700 3775 50  0000 C CNN
+F 1 "D_TVS_x2_AAC" H 7700 3700 50  0000 C CNN
+F 2 "" H 7550 3600 50  0001 C CNN
+F 3 "" H 7550 3600 50  0001 C CNN
+	1    7700 3600
+	1    0    0    -1  
+$EndComp
+Text Label 8050 4050 2    60   ~ 0
+GND2
+Wire Wire Line
+	4500 1600 4800 1600
+Wire Wire Line
+	2400 1600 3500 1600
+Wire Wire Line
+	3500 2300 2650 2300
+Wire Wire Line
+	4500 2300 4800 2300
+Wire Wire Line
+	2900 3400 3200 3400
+Wire Wire Line
+	3200 3400 3200 3300
+Connection ~ 2900 3400
+Wire Wire Line
+	2900 2800 2900 2900
+Wire Wire Line
+	2900 2900 2900 3000
+Wire Wire Line
+	2900 2900 3200 2900
+Wire Wire Line
+	3200 2900 3200 3000
+Connection ~ 2900 2900
+Wire Wire Line
+	4750 2800 4750 2900
+Wire Wire Line
+	4750 2900 4750 3000
+Wire Wire Line
+	4750 2900 5050 2900
+Wire Wire Line
+	5050 2900 5050 3000
+Connection ~ 4750 2900
+Wire Wire Line
+	4750 3300 4750 3400
+Wire Wire Line
+	4750 3400 4750 3550
+Wire Wire Line
+	4750 3400 5050 3400
+Wire Wire Line
+	5050 3400 5050 3300
+Wire Wire Line
+	4750 3550 4500 3550
+Connection ~ 4750 3400
+Wire Wire Line
+	2900 3300 2900 3400
+Wire Wire Line
+	2900 3400 2900 3550
+Wire Wire Line
+	2900 3550 2650 3550
+Wire Wire Line
+	2650 2800 2900 2800
+Wire Wire Line
+	4500 2800 4750 2800
+Wire Wire Line
+	4500 2200 4800 2200
+Wire Wire Line
+	1750 2000 3500 2000
+Wire Wire Line
+	1750 1800 3500 1800
+Wire Wire Line
+	1750 2100 3500 2100
+Wire Wire Line
+	1750 1900 3500 1900
+Wire Wire Line
+	4500 1800 5000 1800
+Wire Wire Line
+	4500 1900 5000 1900
+Wire Wire Line
+	4500 2000 5000 2000
+Wire Wire Line
+	4500 2100 5000 2100
+Wire Wire Line
+	6000 1800 6750 1800
+Wire Wire Line
+	6000 2100 6750 2100
+Wire Wire Line
+	6000 1900 6350 1900
+Wire Wire Line
+	6000 2000 6350 2000
+Wire Bus Line
+	1650 1600 1650 1700
+Wire Bus Line
+	1650 1700 1650 1800
+Wire Bus Line
+	1650 1800 1650 1900
+Wire Bus Line
+	1650 1900 1650 2000
+Wire Wire Line
+	1500 1400 2400 1400
+Wire Wire Line
+	2400 1400 2400 1600
+Wire Bus Line
+	1650 1600 1500 1600
+Wire Wire Line
+	7700 3750 7700 4050
+Wire Wire Line
+	7700 4050 7700 4100
+Wire Wire Line
+	6100 3250 6600 3250
+Wire Wire Line
+	6600 3250 7050 3250
+Wire Wire Line
+	6100 4950 6600 4950
+Wire Wire Line
+	6600 4950 7050 4950
+Connection ~ 6600 4950
+Connection ~ 6600 3250
+Wire Wire Line
+	7350 3600 7350 4950
+Wire Wire Line
+	7350 3250 8050 3250
+Wire Wire Line
+	8050 3250 9100 3250
+Wire Wire Line
+	8050 3250 8050 3600
+Wire Wire Line
+	7700 4050 8250 4050
+Wire Wire Line
+	8250 4050 9100 4050
+Connection ~ 7700 4050
+$Comp
+L Earth_Protective #PWR017
+U 1 1 590837A1
+P 7950 4550
+F 0 "#PWR017" H 8200 4300 50  0001 C CNN
+F 1 "Earth_Protective" H 8400 4400 50  0001 C CNN
+F 2 "" H 7950 4450 50  0001 C CNN
+F 3 "" H 7950 4450 50  0001 C CNN
+	1    7950 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 59083DA0
+P 8250 4300
+F 0 "R9" V 8330 4300 50  0000 C CNN
+F 1 "1M" V 8250 4300 50  0000 C CNN
+F 2 "" H 8250 4300 60  0000 C CNN
+F 3 "" H 8250 4300 60  0000 C CNN
+	1    8250 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 4550 7950 4550
+Wire Wire Line
+	7950 4550 8250 4550
+Wire Wire Line
+	7700 4550 7700 4400
+Connection ~ 7950 4550
+Wire Wire Line
+	6600 4950 6600 4550
+Wire Wire Line
+	6600 4250 6600 3900
+Wire Wire Line
+	6600 3600 6600 3250
+Wire Wire Line
+	7350 4950 9100 4950
+Connection ~ 8050 3250
+Text Notes 8200 6350 2    60   ~ 0
+R_HV = 1MOhm, 2KV HIGH VOLTAGE RESISTOR\nTT ELECTRONICS HVC 2010 1M0 G T3\n\nC_HV = 4.7nF, 2kV, HIGH VOLTAGE CAPACITOR\nNOVACAP, 1812B 472 K 202 N T\n\n2X - 10Ohm, PULSE PROOF THICK FILM RESISTOR\nVISHAY CRCW0603010RJNEAHP OR SIMILAR\n\nTVS, BIDIRECTIONAL 400W TRANSIENT SUPPRESSOR\nBOURNS CDSOT23-SM712
+Text Notes 8250 3500 2    60   ~ 0
+TVS
+Text Notes 6450 4400 2    60   ~ 0
+R_TERM
+Text HLabel 9350 2700 2    60   BiDi ~ 0
+RS485TB[0..2]
+Entry Wire Line
+	9100 3250 9200 3150
+Entry Wire Line
+	9100 4050 9200 3950
+Entry Wire Line
+	9100 4950 9200 4850
+Connection ~ 8250 4050
+Wire Bus Line
+	9200 2700 9200 3150
+Wire Bus Line
+	9200 3150 9200 3950
+Wire Bus Line
+	9200 3950 9200 4850
+Text Label 9100 4050 2    60   ~ 0
+RS485TB0
+Text Label 9100 4950 2    60   ~ 0
+RS485TB1
+Text Label 9100 3250 2    60   ~ 0
+RS485TB2
+Wire Bus Line
+	9200 2700 9350 2700
+Text Notes 8550 4350 2    60   ~ 0
+R_HV
+Text Notes 7700 950  0    60   ~ 0
+http://www.ti.com/lit/ug/tiduct4a/tiduct4a.pdf
+Text Notes 7700 1250 0    60   ~ 0
+http://www.ti.com/lit/ds/symlink/sn65hvd888.pdf
+$Comp
+L SN65HVD888D U?
+U 1 1 592314F5
+P 5000 2100
+F 0 "U?" H 5200 2350 60  0000 L CNN
+F 1 "SN65HVD888D" H 5200 2250 60  0000 L CNN
+F 2 "CBC_IC:SOIC-8_Pad1.55x0.6_Pitch5.40x1.27" H 5050 2850 60  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn65hvd888.pdf" H 5050 2750 60  0001 L CNN
+F 4 "IC-1002-0" H 5050 2450 60  0001 L CNN "HPN"
+F 5 "SN65HVD888D" H 5050 2550 60  0001 L CNN "MPN"
+F 6 "Texas Instruments" H 5050 2650 60  0001 L CNN "MFG"
+	1    5000 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L TI_ISOW7841 U?
+U 1 1 59231895
+P 3500 1600
+F 0 "U?" H 3700 1850 60  0000 L CNN
+F 1 "TI_ISOW7841" H 3700 1750 60  0000 L CNN
+F 2 "" H 3500 1600 60  0001 C CNN
+F 3 "" H 3500 1600 60  0001 C CNN
+	1    3500 1600
+	1    0    0    -1  
+$EndComp
+Text Label 4800 1700 2    60   ~ 0
+GND2
+Wire Wire Line
+	4500 1700 4800 1700
+Text Label 2650 1700 0    60   ~ 0
+GND1
+Wire Wire Line
+	2650 1700 3500 1700
+Wire Wire Line
+	2900 5100 3500 5100
+Wire Wire Line
+	2900 4800 3450 4800
+Wire Wire Line
+	2150 4800 2150 5100
+Wire Wire Line
+	1950 4800 2150 4800
+Wire Wire Line
+	2150 4800 2600 4800
+Wire Wire Line
+	2150 5100 2600 5100
+Connection ~ 2150 4800
+$Comp
+L RES-1000-075_120Ohm R?
+U 1 1 59235274
+P 6600 4400
+AR Path="/59235274" Ref="R?"  Part="1" 
+AR Path="/5907867C/59235274" Ref="R?"  Part="1" 
+F 0 "R?" H 6600 4465 50  0000 C CNB
+F 1 "120" H 6600 4330 40  0000 C CNN
+F 2 "cbc_passive:R0805" H 6600 4265 40  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 6600 4215 40  0001 C CNN
+F 4 "Stackpole" H 6600 4165 40  0001 C CNN "MFG"
+F 5 "RMCF0805FT120R" H 6600 4115 40  0001 C CNN "MPN"
+F 6 "RES-1000-075" H 6600 4065 40  0001 C CNN "HPN"
+	1    6600 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RES-1000-000_0Ohm R?
+U 1 1 59234426
+P 2750 4800
+AR Path="/59234426" Ref="R?"  Part="1" 
+AR Path="/5907867C/59234426" Ref="R?"  Part="1" 
+F 0 "R?" H 2750 4865 50  0000 C CNB
+F 1 "0" H 2750 4730 40  0000 C CNN
+F 2 "cbc_passive:R0805" H 2750 4665 40  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 2750 4615 40  0001 C CNN
+F 4 "Stackpole" H 2750 4565 40  0001 C CNN "MFG"
+F 5 "RMCF0805ZT0R00" H 2750 4515 40  0001 C CNN "MPN"
+F 6 "RES-1000-000" H 2750 4465 40  0001 C CNN "HPN"
+	1    2750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L RES-1000-000_0Ohm R?
+U 1 1 59234836
+P 2750 5100
+AR Path="/59234836" Ref="R?"  Part="1" 
+AR Path="/5907867C/59234836" Ref="R?"  Part="1" 
+F 0 "R?" H 2750 5165 50  0000 C CNB
+F 1 "0 - DNP" H 2750 5030 40  0000 C CNN
+F 2 "cbc_passive:R0805" H 2750 4965 40  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 2750 4915 40  0001 C CNN
+F 4 "Stackpole" H 2750 4865 40  0001 C CNN "MFG"
+F 5 "RMCF0805ZT0R00" H 2750 4815 40  0001 C CNN "MPN"
+F 6 "RES-1000-000" H 2750 4765 40  0001 C CNN "HPN"
+	1    2750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L RES-1000-000_0Ohm R?
+U 1 1 59235142
+P 6600 3750
+AR Path="/59235142" Ref="R?"  Part="1" 
+AR Path="/5907867C/59235142" Ref="R?"  Part="1" 
+F 0 "R?" H 6600 3815 50  0000 C CNB
+F 1 "0" H 6600 3680 40  0000 C CNN
+F 2 "cbc_passive:R0805" H 6600 3615 40  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 6600 3565 40  0001 C CNN
+F 4 "Stackpole" H 6600 3515 40  0001 C CNN "MFG"
+F 5 "RMCF0805ZT0R00" H 6600 3465 40  0001 C CNN "MPN"
+F 6 "RES-1000-000" H 6600 3415 40  0001 C CNN "HPN"
+	1    6600 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RES-1005-001_10Ohm R?
+U 1 1 5923A026
+P 7200 3250
+F 0 "R?" H 7200 3350 50  0000 C CNB
+F 1 "10" H 7200 3150 40  0000 C CNN
+F 2 "cbc_passive:R0805" H 7200 3850 40  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/AOA0000C291.pdf" H 7200 3750 40  0001 C CNN
+F 4 "Panasonic" H 7200 3650 40  0001 C CNN "MFG"
+F 5 "ERJP06J100V" H 7200 3550 40  0001 C CNN "MPN"
+F 6 "RES-1005-001" H 7200 3450 40  0001 C CNN "HPN"
+	1    7200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L RES-1005-001_10Ohm R?
+U 1 1 5923A38D
+P 7200 4950
+F 0 "R?" H 7200 5050 50  0000 C CNB
+F 1 "10" H 7200 4850 40  0000 C CNN
+F 2 "cbc_passive:R0805" H 7200 5550 40  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/AOA0000C291.pdf" H 7200 5450 40  0001 C CNN
+F 4 "Panasonic" H 7200 5350 40  0001 C CNN "MFG"
+F 5 "ERJP06J100V" H 7200 5250 40  0001 C CNN "MPN"
+F 6 "RES-1005-001" H 7200 5150 40  0001 C CNN "HPN"
+	1    7200 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 59078CE6
+P 2900 3150
+F 0 "C5" H 2925 3250 50  0000 L CNN
+F 1 "10uF" H 2925 3050 50  0000 L CNN
+F 2 "" H 2938 3000 50  0001 C CNN
+F 3 "" H 2900 3150 50  0001 C CNN
+	1    2900 3150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

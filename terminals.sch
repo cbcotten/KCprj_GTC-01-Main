@@ -1,0 +1,442 @@
+EESchema Schematic File Version 2
+LIBS:GTC_01_Main-rescue
+LIBS:CBC_Arduino
+LIBS:CBC_Components
+LIBS:CBC_Headers
+LIBS:freetronics_schematic
+LIBS:CBC_GTC
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:wiznet
+LIBS:maxim
+LIBS:CBC_IC
+LIBS:CAP_0805_AVX_X7R_16V_5%_E6
+LIBS:CAP_0805_AVX_X7R_16V_10%_E6
+LIBS:CAP_0805_AVX_X7R_50V_5%_E6
+LIBS:CAP_0805_AVX_X7R_50V_10%_E6
+LIBS:CAP_0805_Kemet_X7R_16V_5%_E12
+LIBS:CAP_0805_Kemet_X7R_16V_10%_E12
+LIBS:CAP_0805_Kemet_X7R_50V_5%_E12
+LIBS:CAP_0805_Kemet_X7R_50V_10%_E12
+LIBS:RES_0805_Panasonic_0.125W_1%_E24
+LIBS:RES_0805_Panasonic_0.125W_1%_E96
+LIBS:RES_0805_Stackpole_0.125W_1%_E24
+LIBS:RES_0805_Stackpole_0.125W_1%_E96
+LIBS:RES_0805_Stackpole_0.125W_5%_E24
+LIBS:RES_0805_Panasonic_0.500W_5%_E24_PulseProof
+LIBS:GTC_01_Main-cache
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 3 9
+Title "GTC TERMINAL BLOCKS"
+Date ""
+Rev "Draft_0"
+Comp "3RD WAVE LABS LLC"
+Comment1 "EXTERNAL CONNECTIONS"
+Comment2 "MODULE-01"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 1x03 J?
+U 1 1 59049A57
+P 1400 1550
+AR Path="/59049A57" Ref="J?"  Part="1" 
+AR Path="/59049790/59049A57" Ref="J1"  Part="1" 
+F 0 "J1" H 1600 1800 60  0000 L CNN
+F 1 "1x03" H 1600 1700 60  0000 L CNN
+F 2 "" H 1400 1550 60  0001 C CNN
+F 3 "" H 1400 1550 60  0001 C CNN
+	1    1400 1550
+	-1   0    0    -1  
+$EndComp
+Text HLabel 2300 1400 2    60   Output ~ 0
+POWER[0..2]
+Text Notes 950  1200 0    60   ~ 0
+0 TO 36V DC PS Input
+Text Label 1400 1750 0    60   ~ 0
+PE
+Text Label 1400 1650 0    60   ~ 0
+PS-
+Text Label 1400 1550 0    60   ~ 0
+PS+
+Wire Bus Line
+	2150 1400 2150 1650
+Wire Bus Line
+	2150 1400 2300 1400
+$Comp
+L 1x03 J?
+U 1 1 590A85DF
+P 1400 3200
+F 0 "J?" H 1600 3450 60  0000 L CNN
+F 1 "1x03" H 1600 3350 60  0000 L CNN
+F 2 "" H 1400 3200 60  0001 C CNN
+F 3 "" H 1400 3200 60  0001 C CNN
+	1    1400 3200
+	-1   0    0    -1  
+$EndComp
+Text HLabel 2350 3050 2    60   BiDi ~ 0
+RS485-[0..2]
+Text Label 1400 3200 0    60   ~ 0
+COM
+Text Label 1400 3300 0    60   ~ 0
+A
+Text Label 1400 3400 0    60   ~ 0
+B
+Text Label 2100 3200 2    60   ~ 0
+RS485-0
+Text Label 2100 3300 2    60   ~ 0
+RS485-1
+Text Label 2100 3400 2    60   ~ 0
+RS485-2
+Wire Wire Line
+	1400 3200 2100 3200
+Wire Wire Line
+	1400 3300 2100 3300
+Wire Wire Line
+	1400 3400 2100 3400
+Entry Wire Line
+	2100 3200 2200 3100
+Entry Wire Line
+	2100 3300 2200 3200
+Entry Wire Line
+	2100 3400 2200 3300
+Wire Bus Line
+	2200 3050 2200 3300
+Wire Bus Line
+	2200 3050 2350 3050
+Entry Wire Line
+	2050 1550 2150 1450
+Entry Wire Line
+	2050 1650 2150 1550
+Entry Wire Line
+	2050 1750 2150 1650
+Text Label 2050 1550 2    60   ~ 0
+POWER0
+Text Label 2050 1650 2    60   ~ 0
+POWER1
+Text Label 2050 1750 2    60   ~ 0
+POWER2
+Wire Wire Line
+	1400 1750 2050 1750
+Wire Wire Line
+	1400 1650 2050 1650
+Wire Wire Line
+	1400 1550 2050 1550
+Text HLabel 2800 3900 2    60   BiDi ~ 0
+COM_SPI[0..3]
+Wire Bus Line
+	2800 3900 2650 3900
+Entry Wire Line
+	2550 4050 2650 3950
+Entry Wire Line
+	2550 4050 2650 3950
+Entry Wire Line
+	2550 4150 2650 4050
+Entry Wire Line
+	2550 4250 2650 4150
+Entry Wire Line
+	2550 4700 2650 4600
+Text Label 1400 4050 0    60   ~ 0
+COM_MOSI
+Text Label 1400 4150 0    60   ~ 0
+COM_MISO
+Text Label 1400 4250 0    60   ~ 0
+COM_SCK
+Text Label 1400 4700 0    60   ~ 0
+COM_SS1
+Wire Wire Line
+	1400 4700 2550 4700
+Wire Wire Line
+	1400 4250 2550 4250
+Wire Wire Line
+	1400 4150 2550 4150
+Wire Wire Line
+	1400 4050 2550 4050
+Text HLabel 2800 5050 2    60   BiDi ~ 0
+COM_I2C[0..1]
+Text Label 1400 4800 0    60   ~ 0
+COM_SDA
+Text Label 1400 4900 0    60   ~ 0
+COM_SCK
+Text Label 2550 4800 2    60   ~ 0
+COM_I2C0
+Text Label 2550 4900 2    60   ~ 0
+COM_I2C1
+Wire Wire Line
+	1400 4800 2550 4800
+Wire Wire Line
+	1400 4900 2550 4900
+Entry Wire Line
+	2550 4800 2650 4900
+Entry Wire Line
+	2550 4900 2650 5000
+Wire Bus Line
+	2650 4900 2650 5050
+Wire Bus Line
+	2650 5050 2800 5050
+$Comp
+L 1x03 J?
+U 1 1 590ACEFF
+P 1400 4050
+F 0 "J?" H 1600 4300 60  0000 L CNN
+F 1 "1x03" H 1600 4200 60  0000 L CNN
+F 2 "" H 1400 4050 60  0001 C CNN
+F 3 "" H 1400 4050 60  0001 C CNN
+	1    1400 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 1x03 J?
+U 1 1 590ACF51
+P 1400 4700
+F 0 "J?" H 1600 4950 60  0000 L CNN
+F 1 "1x03" H 1600 4850 60  0000 L CNN
+F 2 "" H 1400 4700 60  0001 C CNN
+F 3 "" H 1400 4700 60  0001 C CNN
+	1    1400 4700
+	-1   0    0    -1  
+$EndComp
+Wire Bus Line
+	2650 3900 2650 4600
+$Comp
+L 1x03 J?
+U 1 1 590AD0E3
+P 1400 2300
+AR Path="/590AD0E3" Ref="J?"  Part="1" 
+AR Path="/59049790/590AD0E3" Ref="J?"  Part="1" 
+F 0 "J?" H 1600 2550 60  0000 L CNN
+F 1 "1x03" H 1600 2450 60  0000 L CNN
+F 2 "" H 1400 2300 60  0001 C CNN
+F 3 "" H 1400 2300 60  0001 C CNN
+	1    1400 2300
+	-1   0    0    -1  
+$EndComp
+Text HLabel 1400 2300 2    60   Input ~ 0
++5V
+Text HLabel 1400 2500 2    60   Input ~ 0
++6.5V
+$Comp
+L GND #PWR?
+U 1 1 590AD239
+P 1850 2400
+F 0 "#PWR?" H 1850 2150 50  0001 C CNN
+F 1 "GND" H 1850 2250 50  0000 C CNN
+F 2 "" H 1850 2400 50  0001 C CNN
+F 3 "" H 1850 2400 50  0001 C CNN
+	1    1850 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1400 2400 1850 2400
+Text HLabel 6600 3850 0    60   BiDi ~ 0
+TC_SPI[0..3]
+Wire Bus Line
+	6600 3850 6750 3850
+Text Label 6850 4000 0    60   ~ 0
+TC_SPI0
+Text Label 6850 4100 0    60   ~ 0
+TC_SPI1
+Text Label 6850 4200 0    60   ~ 0
+TC_SPI2
+Text Label 6850 4650 0    60   ~ 0
+TC_SPI3
+Entry Wire Line
+	6850 4000 6750 3900
+Entry Wire Line
+	6850 4000 6750 3900
+Entry Wire Line
+	6850 4100 6750 4000
+Entry Wire Line
+	6850 4200 6750 4100
+Entry Wire Line
+	6850 4650 6750 4550
+Text Label 8000 4000 2    60   ~ 0
+TC_MOSI
+Text Label 8000 4100 2    60   ~ 0
+TC_MISO
+Text Label 8000 4200 2    60   ~ 0
+TC_SCK
+Text Label 8000 4650 2    60   ~ 0
+TC_SS1
+Wire Wire Line
+	8000 4650 6850 4650
+Wire Wire Line
+	8000 4200 6850 4200
+Wire Wire Line
+	8000 4100 6850 4100
+Wire Wire Line
+	8000 4000 6850 4000
+Text HLabel 6600 5000 0    60   BiDi ~ 0
+TC_I2C[0..2]
+Text Label 8000 4750 2    60   ~ 0
+TC_SDA
+Text Label 8000 4850 2    60   ~ 0
+TC_SCK
+Text Label 6850 4750 0    60   ~ 0
+TC_I2C0
+Text Label 6850 4850 0    60   ~ 0
+TC_I2C1
+Wire Wire Line
+	8000 4750 6850 4750
+Wire Wire Line
+	8000 4850 6850 4850
+Entry Wire Line
+	6850 4750 6750 4850
+Entry Wire Line
+	6850 4850 6750 4950
+Wire Bus Line
+	6750 4850 6750 5000
+Wire Bus Line
+	6750 5000 6600 5000
+$Comp
+L 1x03 J?
+U 1 1 590AD398
+P 8000 4000
+F 0 "J?" H 8200 4250 60  0000 L CNN
+F 1 "1x03" H 8200 4150 60  0000 L CNN
+F 2 "" H 8000 4000 60  0001 C CNN
+F 3 "" H 8000 4000 60  0001 C CNN
+	1    8000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1x03 J?
+U 1 1 590AD39E
+P 8000 4650
+F 0 "J?" H 8200 4900 60  0000 L CNN
+F 1 "1x03" H 8200 4800 60  0000 L CNN
+F 2 "" H 8000 4650 60  0001 C CNN
+F 3 "" H 8000 4650 60  0001 C CNN
+	1    8000 4650
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	6750 3850 6750 4550
+Text Label 2550 4050 2    60   ~ 0
+COM_SPI0
+Text Label 2550 4150 2    60   ~ 0
+COM_SPI1
+Text Label 2550 4250 2    60   ~ 0
+COM_SPI2
+Text Label 2550 4700 2    60   ~ 0
+COM_SPI3
+$Comp
+L 1x03 J?
+U 1 1 590AD8DC
+P 8000 5500
+F 0 "J?" H 8200 5750 60  0000 L CNN
+F 1 "1x03" H 8200 5650 60  0000 L CNN
+F 2 "" H 8000 5500 60  0001 C CNN
+F 3 "" H 8000 5500 60  0001 C CNN
+	1    8000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1x03 J?
+U 1 1 590AD91E
+P 8000 6150
+F 0 "J?" H 8200 6400 60  0000 L CNN
+F 1 "1x03" H 8200 6300 60  0000 L CNN
+F 2 "" H 8000 6150 60  0001 C CNN
+F 3 "" H 8000 6150 60  0001 C CNN
+	1    8000 6150
+	1    0    0    -1  
+$EndComp
+Text HLabel 6600 5900 0    60   BiDi ~ 0
+TC_FTDI[0..5]
+Text Label 8000 5500 2    60   ~ 0
+DTR_GRN
+Text Label 8000 5600 2    60   ~ 0
+RXI
+Text Label 8000 5700 2    60   ~ 0
+TXO
+Text Label 8000 6150 2    60   ~ 0
+3V3
+Text Label 8000 6250 2    60   ~ 0
+CTS
+Text Label 8000 6350 2    60   ~ 0
+GND_BLK
+Text Label 7050 5500 0    60   ~ 0
+TC_FTDI0
+Text Label 7050 5600 0    60   ~ 0
+TC_FTDI1
+Text Label 7050 5700 0    60   ~ 0
+TC_FTDI2
+Text Label 7050 6150 0    60   ~ 0
+TC_FTDI3
+Text Label 7050 6250 0    60   ~ 0
+TC_FTDI4
+Text Label 7050 6350 0    60   ~ 0
+TC_FTDI5
+Wire Wire Line
+	8000 5700 7050 5700
+Wire Wire Line
+	7050 5600 8000 5600
+Wire Wire Line
+	7050 5500 8000 5500
+Wire Wire Line
+	7050 6150 8000 6150
+Wire Wire Line
+	7050 6250 8000 6250
+Wire Wire Line
+	7050 6350 8000 6350
+Entry Wire Line
+	6950 5600 7050 5500
+Entry Wire Line
+	6950 5700 7050 5600
+Entry Wire Line
+	6950 5800 7050 5700
+Entry Wire Line
+	6950 6050 7050 6150
+Entry Wire Line
+	6950 6150 7050 6250
+Entry Wire Line
+	6950 6250 7050 6350
+Wire Bus Line
+	6950 5600 6950 6250
+Wire Bus Line
+	6950 5900 6600 5900
+Connection ~ 18650 6300
+$Comp
+L TERMBLOCK_3POS TB?
+U 1 1 590B7CD7
+P 1850 6350
+F 0 "TB?" H 2050 6600 60  0000 L CNN
+F 1 "TERMBLOCK_3POS" H 2050 6500 60  0000 L CNN
+F 2 "" H 1850 6350 60  0001 C CNN
+F 3 "" H 1850 6350 60  0001 C CNN
+	1    1850 6350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

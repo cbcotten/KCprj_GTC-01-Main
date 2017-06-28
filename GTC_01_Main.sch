@@ -1,0 +1,253 @@
+EESchema Schematic File Version 2
+LIBS:GTC_01_Main-rescue
+LIBS:CBC_Arduino
+LIBS:CBC_Components
+LIBS:CBC_Headers
+LIBS:freetronics_schematic
+LIBS:CBC_GTC
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:wiznet
+LIBS:maxim
+LIBS:CBC_IC
+LIBS:CAP_0805_AVX_X7R_16V_5%_E6
+LIBS:CAP_0805_AVX_X7R_16V_10%_E6
+LIBS:CAP_0805_AVX_X7R_50V_5%_E6
+LIBS:CAP_0805_AVX_X7R_50V_10%_E6
+LIBS:CAP_0805_Kemet_X7R_16V_5%_E12
+LIBS:CAP_0805_Kemet_X7R_16V_10%_E12
+LIBS:CAP_0805_Kemet_X7R_50V_5%_E12
+LIBS:CAP_0805_Kemet_X7R_50V_10%_E12
+LIBS:RES_0805_Panasonic_0.125W_1%_E24
+LIBS:RES_0805_Panasonic_0.125W_1%_E96
+LIBS:RES_0805_Stackpole_0.125W_1%_E24
+LIBS:RES_0805_Stackpole_0.125W_1%_E96
+LIBS:RES_0805_Stackpole_0.125W_5%_E24
+LIBS:RES_0805_Panasonic_0.500W_5%_E24_PulseProof
+LIBS:GTC_01_Main-cache
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 9
+Title "GENERIC TEMPERATURE CONTROLLER"
+Date ""
+Rev "Draft_0"
+Comp "3RD WAVE LABS LLC"
+Comment1 "CONTROLLER"
+Comment2 "MODULE-01"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3750 3400 650  700 
+U 5904BFD5
+F0 "FRAM" 60
+F1 "fram.sch" 60
+F2 "VDD" I L 3750 3600 60 
+F3 "I2C[0..1]" B L 3750 3900 60 
+$EndSheet
+$Sheet
+S 800  850  1050 4150
+U 59049790
+F0 "TERMINALS" 60
+F1 "terminals.sch" 60
+F2 "POWER[0..2]" O R 1850 1100 60 
+F3 "RS485-[0..2]" B R 1850 1650 60 
+F4 "COM_SPI[0..3]" B R 1850 1850 60 
+F5 "COM_I2C[0..1]" B R 1850 2050 60 
+F6 "+5V" I R 1850 1500 60 
+F7 "+6.5V" I R 1850 1300 60 
+F8 "TC_SPI[0..3]" B R 1850 2800 60 
+F9 "TC_I2C[0..2]" B R 1850 3000 60 
+F10 "TC_FTDI[0..5]" B R 1850 3200 60 
+$EndSheet
+$Sheet
+S 1050 5850 700  700 
+U 590495B7
+F0 "POWER" 60
+F1 "power.sch" 60
+F2 "PS[0..2]" I L 1050 6100 60 
+F3 "+6.5VREG" O R 1750 6300 60 
+F4 "+5VREG" O R 1750 6450 60 
+$EndSheet
+Text Label 1900 6450 0    60   ~ 0
+5VREG
+Wire Wire Line
+	1750 6450 1900 6450
+Text Label 1900 6300 0    60   ~ 0
+6V5REG
+Wire Wire Line
+	1750 6300 1900 6300
+Wire Wire Line
+	3750 3600 3600 3600
+Text Label 3600 3600 2    60   ~ 0
+5VREG
+$Sheet
+S 3800 850  1900 1100
+U 59061B40
+F0 "MEGA2560" 60
+F1 "mega2560.sch" 60
+F2 "VIN" I L 3800 1000 60 
+F3 "I2C[0..1]" B R 5700 1000 60 
+F4 "SPI[0..7]" B R 5700 1200 60 
+F5 "RS485-[0..3]" B R 5700 1400 60 
+F6 "SERIAL0[0..1]" B R 5700 1600 60 
+$EndSheet
+Text Label 3650 1000 2    60   ~ 0
+6V5REG
+Wire Wire Line
+	3650 1000 3800 1000
+Wire Bus Line
+	3750 3900 3600 3900
+Text Label 3600 3900 2    60   ~ 0
+MEGA_I2C[0..1]
+Text Label 5850 1000 0    60   ~ 0
+MEGA_I2C[0..1]
+Wire Bus Line
+	5700 1000 5850 1000
+Wire Bus Line
+	5700 1200 5850 1200
+Text Label 5850 1200 0    60   ~ 0
+MEGA_SPI[0..7]
+Text Label 2000 1100 0    60   ~ 0
+PS[0..2]
+Text Label 900  6100 2    60   ~ 0
+PS[0..2]
+$Sheet
+S 3850 6200 1100 1200
+U 5906E5A5
+F0 "RS485" 60
+F1 "rs485.sch" 60
+F2 "RS485-[0..3]" B L 3850 6700 60 
+F3 "VCC" I L 3850 6350 60 
+F4 "RS485TB[0..2]" B R 4950 7100 60 
+$EndSheet
+Text Label 3700 6700 2    60   ~ 0
+RS485[0..3]
+Wire Bus Line
+	3700 6700 3850 6700
+Text Label 5100 7100 0    60   ~ 0
+RS485TB[0..2]
+Wire Bus Line
+	5100 7100 4950 7100
+$Sheet
+S 3900 4550 1150 1150
+U 5907867C
+F0 "RS485_ISO" 60
+F1 "rs485_iso.sch" 60
+F2 "VIN" I L 3900 4750 60 
+F3 "RS485-[0..3]" T L 3900 5000 60 
+F4 "RS485TB[0..2]" B R 5050 5350 60 
+$EndSheet
+Wire Wire Line
+	3850 6350 3700 6350
+Text Label 3700 6350 2    60   ~ 0
+5VREG
+Text Label 3750 4750 2    60   ~ 0
+5VREG
+Wire Wire Line
+	3750 4750 3900 4750
+Text Label 5200 5350 0    60   ~ 0
+RS485TB[0..2]
+Wire Bus Line
+	5050 5350 5200 5350
+Text Label 3750 5000 2    60   ~ 0
+RS485[0..3]
+Wire Bus Line
+	3750 5000 3900 5000
+Text Label 5850 1400 0    60   ~ 0
+RS485[0..3]
+Wire Bus Line
+	5700 1400 5850 1400
+$Sheet
+S 8350 5200 750  1150
+U 5907CAAB
+F0 "DIN_BUS" 60
+F1 "din_bus.sch" 60
+F2 "PS[0..2]" I L 8350 5350 60 
+F3 "SPI[0..3]" B L 8350 5550 60 
+F4 "I2C[0..1]" B L 8350 5750 60 
+F5 "DIO[0..3]" B L 8350 5950 60 
+$EndSheet
+Wire Bus Line
+	1850 1100 2000 1100
+Wire Bus Line
+	900  6100 1050 6100
+Text Label 8200 5350 2    60   ~ 0
+PS[0..2]
+Wire Bus Line
+	8200 5350 8350 5350
+Text Label 8200 5550 2    60   ~ 0
+TC_SPI[0..3]
+Wire Bus Line
+	8200 5550 8350 5550
+Text Label 2000 1650 0    60   ~ 0
+RS485TB[0..2]
+Wire Bus Line
+	1850 1650 2000 1650
+Text Label 2000 2050 0    60   ~ 0
+MEGA_I2C[0..1]
+Wire Bus Line
+	1850 2050 2000 2050
+Wire Bus Line
+	1850 1850 2000 1850
+Text Label 2000 1850 0    60   ~ 0
+MEGA_SPI[0..7]
+Text Label 2000 1500 0    60   ~ 0
+5VREG
+Wire Wire Line
+	1850 1500 2000 1500
+Text Label 2000 1300 0    60   ~ 0
+6V5REG
+Wire Wire Line
+	1850 1300 2000 1300
+Text Label 8200 5750 2    60   ~ 0
+TC_I2C[0..1]
+Wire Bus Line
+	8200 5750 8350 5750
+Text Label 8200 5950 2    60   ~ 0
+TC_DIO[0..3]
+Wire Bus Line
+	8200 5950 8350 5950
+$Sheet
+S 7950 850  1250 1200
+U 590B8215
+F0 "TEMP_CONTROLLER" 60
+F1 "temp_controller.sch" 60
+F2 "FTDI[0..5]" B L 7950 1850 60 
+F3 "I2C[0..1]" B R 9200 1000 60 
+F4 "RAW" I L 7950 1000 60 
+F5 "SPI[0..3]" B R 9200 1200 60 
+F6 "USART[0..1]" B R 9200 1400 60 
+F7 "DIO[0..3]" B R 9200 1600 60 
+$EndSheet
+$EndSCHEMATC
